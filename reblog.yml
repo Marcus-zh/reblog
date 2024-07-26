@@ -1,0 +1,18 @@
+server:
+  port: 3000
+
+dashboard:
+  enabled: true
+
+db:
+  type: postgres
+  host: env(POSTGRES_URL)
+  port: 5432
+  user: env(POSTGRES_USER)
+  password: env(POSTGRES_PASSWORD)
+  dbname: env(POSTGRES_DATABASE)
+  ssl: true
+
+plugins:
+  - example/plugin
+  
